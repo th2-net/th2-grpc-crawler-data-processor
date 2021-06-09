@@ -24,7 +24,7 @@ option java_package = "com.exactpro.th2.crawlercheck2.grpc";
 
 service Check2 {
 
-  rpc crawlerConnect(CrawlerInfo) returns (Check2Info) {
+  rpc crawlerConnect (CrawlerInfo) returns (Check2Info) {
   }
 
   rpc sendEvent (EventData) returns (Response) {
