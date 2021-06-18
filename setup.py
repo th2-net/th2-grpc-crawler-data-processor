@@ -113,11 +113,13 @@ setup(
     long_description_content_type='text/markdown',
     author='TH2-devs',
     author_email='th2-devs@exactprosystems.com',
-    url='https://github.com/th2-net/th2-grpc-generator-template',
+    url='https://github.com/th2-net/th2-grpc-crawler-check2',
     license='Apache License 2.0',
     python_requires='>=3.7',
     install_requires=[
-        'grpcio-tools==1.33.1'
+        'grpcio-tools==1.33.1',
+        'th2-grpc-common~=3.1.2',
+        'th2-grpc-data-provider~=0.0.1'
     ],
     packages=packages,
     package_data=package_data,
