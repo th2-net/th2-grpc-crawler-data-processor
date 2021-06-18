@@ -1,4 +1,4 @@
-# th2 gRPC crawler check2 library
+# th2 gRPC crawler data service library
 
 This is the template project for creating custom gRPC libraries. It contains example proto messages and services. <br>
 Tool generates code from `.proto` files and uploads built packages (`.proto` files and generated code) to specified repositories.
