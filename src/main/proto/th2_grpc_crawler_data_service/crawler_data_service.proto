@@ -65,8 +65,14 @@ message MessageDataRequest {
 
 message EventResponse {
   EventID id = 1;
+  Status status = 2;
 }
 
 message MessageResponse {
   MessageID id = 1;
+  Status status = 2;
+}
+
+message Status {
+  bool handshake_required = 1;
 }
