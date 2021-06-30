@@ -16,7 +16,7 @@
 
 syntax = "proto3";
 
-package th2.dataservice;
+package th2.crawler.dataservice;
 
 import "th2_grpc_common/common.proto";
 import "th2_grpc_data_provider/data_provider_template.proto";
