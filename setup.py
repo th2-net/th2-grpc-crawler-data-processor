@@ -1,4 +1,4 @@
-#   Copyright 2020-2020 Exactpro (Exactpro Systems Limited)
+#   Copyright 2020-2021 Exactpro (Exactpro Systems Limited)
 #
 #   Licensed under the Apache License, Version 2.0 (the "License");
 #   you may not use this file except in compliance with the License.
@@ -113,11 +113,13 @@ setup(
     long_description_content_type='text/markdown',
     author='TH2-devs',
     author_email='th2-devs@exactprosystems.com',
-    url='https://github.com/th2-net/th2-grpc-generator-template',
+    url='https://github.com/th2-net/th2-grpc-crawler-data-service',
     license='Apache License 2.0',
     python_requires='>=3.7',
     install_requires=[
-        'grpcio-tools==1.33.1'
+        'grpcio-tools==1.33.1',
+        'th2-grpc-common~=3.1.2',
+        'th2-grpc-data-provider~=0.0.4'
     ],
     packages=packages,
     package_data=package_data,
