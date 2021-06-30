@@ -22,7 +22,7 @@ import "th2_grpc_common/common.proto";
 import "th2_grpc_data_provider/data_provider_template.proto";
 
 option java_multiple_files = true;
-option java_package = "com.exactpro.th2.dataservice.grpc";
+option java_package = "com.exactpro.th2.crawler.dataservice.grpc";
 
 service DataService {
 
