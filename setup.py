@@ -119,7 +119,7 @@ setup(
     install_requires=[
         'grpcio-tools==1.33.1',
         'th2-grpc-common~=3.1.2',
-        'th2-grpc-data-provider~=0.0.1'
+        'th2-grpc-data-provider~=0.0.4'
     ],
     packages=packages,
     package_data=package_data,
