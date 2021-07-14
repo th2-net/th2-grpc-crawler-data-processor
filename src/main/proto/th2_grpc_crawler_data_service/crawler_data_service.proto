@@ -69,7 +69,7 @@ message EventResponse {
 }
 
 message MessageResponse {
-  MessageID id = 1;
+  map<string, MessageID> ids = 1;
   Status status = 2;
 }
 
