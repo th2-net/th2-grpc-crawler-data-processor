@@ -1,7 +1,8 @@
-# th2 gRPC crawler data service library
+# th2 gRPC crawler data processor library
 
-This is the template project for creating custom gRPC libraries. It contains example proto messages and services. <br>
-Tool generates code from `.proto` files and uploads built packages (`.proto` files and generated code) to specified repositories.
+This project contains the gRPC interface to implement if you want to create your own crawler data processor.
+
+The crawler data processor work with the [crawler](https://github.com/th2-net/th2-crawler)
 
 ## How to transform template
 1. Create a directory with the same name as project name (use underscores instead of dashes) under `src/main/proto` directory (remove other files and directories if they exist).
