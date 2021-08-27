@@ -47,3 +47,14 @@ If you wish to manually create and publish package for Python:
     twine upload --repository-url ${PYPI_REPOSITORY_URL} --username ${PYPI_USER} --password ${PYPI_PASSWORD} dist/*
     ```
     `PYPI_REPOSITORY_URL`, `PYPI_USER` and `PYPI_PASSWORD` are parameters for publishing.
+
+## Changes:
+
+### v0.2.0 (Breaking changes)
+
+#### Changed:
+
++ Use list of `MessageID` instead of mapping between session and `MessageID`.
+  User now will have to specify `MessageID` for both directions in the response if he or she needs to set a checkpoint.
+  The list should contain a single `MessageID` for each pair `alias + direction`.
+  If more than one is found the last one (according to their sequences) will be taken.
