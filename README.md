@@ -1,4 +1,4 @@
-# th2 gRPC crawler data processor library
+# th2 gRPC crawler data processor library (0.3.0)
 
 This project contains the gRPC interface to implement if you want to create your own crawler data processor.
 
@@ -49,6 +49,17 @@ If you wish to manually create and publish package for Python:
     `PYPI_REPOSITORY_URL`, `PYPI_USER` and `PYPI_PASSWORD` are parameters for publishing.
 
 ## Changes:
+
+### v0.3.0 (Breaking changes)
+
+#### Braking:
+
++ The rpc methods was renamed according to the Protobuf naming convention (uses PascalCase).
++ The event and message IDs from the response to connect method are removed because this functionality requires additional improvements on Crawler's side.
+
+#### Added:
+
++ New method that will be invoked by the crawler each time the new interval is started.
 
 ### v0.2.0 (Breaking changes)
 
