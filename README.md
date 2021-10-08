@@ -1,4 +1,4 @@
-# th2 gRPC crawler data processor library (0.3.0)
+# th2 gRPC crawler data processor library (0.2.0)
 
 This project contains the gRPC interface to implement if you want to create your own crawler data processor.
 
@@ -50,22 +50,17 @@ If you wish to manually create and publish package for Python:
 
 ## Changes:
 
-### v0.3.0 (Breaking changes)
+### v0.2.0 (Breaking changes)
 
 #### Braking:
 
++ Use list of `MessageID` instead of mapping between session and `MessageID`.
+  User now will have to specify `MessageID` for both directions in the response if he or she needs to set a checkpoint.
+  The list should contain a single `MessageID` for each pair `alias + direction`.
+  If more than one is found the last one (according to their sequences) will be taken.
 + The rpc methods was renamed according to the Protobuf naming convention (uses PascalCase).
 + The event and message IDs from the response to connect method are removed because this functionality requires additional improvements on Crawler's side.
 
 #### Added:
 
 + New method that will be invoked by the crawler each time the new interval is started.
-
-### v0.2.0 (Breaking changes)
-
-#### Changed:
-
-+ Use list of `MessageID` instead of mapping between session and `MessageID`.
-  User now will have to specify `MessageID` for both directions in the response if he or she needs to set a checkpoint.
-  The list should contain a single `MessageID` for each pair `alias + direction`.
-  If more than one is found the last one (according to their sequences) will be taken.
