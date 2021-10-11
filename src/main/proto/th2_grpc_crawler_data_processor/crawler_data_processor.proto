@@ -82,7 +82,8 @@ message EventResponse {
 }
 
 message MessageResponse {
-  repeated MessageID ids = 1;
+  reserved 1;
+  repeated MessageID ids = 3;
   Status status = 2;
 }
 
