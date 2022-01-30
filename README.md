@@ -52,7 +52,7 @@ If you wish to manually create and publish package for Python:
 
 ### v0.2.1
 
-+ `maxMessageSize` in [DataProcessorInfo](https://github.com/th2-net/th2-grpc-crawler-data-processor/blob/880c5cac24f7e4a3ab957ab59498dd26702d16ac/src/main/proto/th2_grpc_crawler_data_processor/crawler_data_processor.proto#L63)
++ `max_message_size` in [DataProcessorInfo](https://github.com/th2-net/th2-grpc-crawler-data-processor/blob/880c5cac24f7e4a3ab957ab59498dd26702d16ac/src/main/proto/th2_grpc_crawler_data_processor/crawler_data_processor.proto#L63)
 allows telling Crawler send messages not greater than `maxMessageSize`
 
 ### v0.2.0 (Breaking changes)
