@@ -1,4 +1,4 @@
-# th2 gRPC crawler data processor library (0.2.0)
+# th2 gRPC crawler data processor library (0.2.1)
 
 This project contains the gRPC interface to implement if you want to create your own crawler data processor.
 
@@ -49,6 +49,11 @@ If you wish to manually create and publish package for Python:
     `PYPI_REPOSITORY_URL`, `PYPI_USER` and `PYPI_PASSWORD` are parameters for publishing.
 
 ## Changes:
+
+### v0.2.1
+
++ `maxMessageSize` in [DataProcessorInfo](https://github.com/th2-net/th2-grpc-crawler-data-processor/blob/880c5cac24f7e4a3ab957ab59498dd26702d16ac/src/main/proto/th2_grpc_crawler_data_processor/crawler_data_processor.proto#L63)
+allows telling Crawler send messages not greater than `maxMessageSize`
 
 ### v0.2.0 (Breaking changes)
 
