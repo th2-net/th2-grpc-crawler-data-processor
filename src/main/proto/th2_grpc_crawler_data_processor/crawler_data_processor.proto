@@ -64,9 +64,7 @@ message DataProcessorInfo {
   string name = 1;
   string version = 2;
   reserved 3, 4;
-  // grpc-core:1.44.0 states:
-  // The default maximum uncompressed size (in bytes) for inbound messages. Defaults to 4 MiB.
-  optional int64 maxMessageSize = 5 [default = 4194304];
+  optional int64 maxMessageSize = 5;
 }
 
 message EventDataRequest {
