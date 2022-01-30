@@ -64,6 +64,7 @@ message DataProcessorInfo {
   string name = 1;
   string version = 2;
   reserved 3, 4;
+  int64 maxMessageSize = 5;
 }
 
 message EventDataRequest {
