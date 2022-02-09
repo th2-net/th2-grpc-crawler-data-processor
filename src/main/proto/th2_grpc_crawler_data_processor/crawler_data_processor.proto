@@ -46,6 +46,8 @@ message IntervalInfo {
     EventID last_event_id = 3;
     MessageIDs last_message_ids = 4;
   }
+
+  CrawlerId id = 5;
 }
 
 message MessageIDs {
