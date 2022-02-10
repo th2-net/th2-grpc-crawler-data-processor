@@ -90,8 +90,7 @@ message MessageResponse {
 }
 
 message IntervalStartResponse {
-  reserved 1;
-  Status status = 2;
+  Status status = 1;
 }
 
 message Status {
