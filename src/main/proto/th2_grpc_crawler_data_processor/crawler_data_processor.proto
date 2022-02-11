@@ -30,7 +30,7 @@ service DataProcessor {
 
   rpc CrawlerConnect(CrawlerInfo) returns (DataProcessorInfo);
 
-  rpc IntervalStart(IntervalInfo) returns (google.protobuf.Empty);
+  rpc IntervalStart(IntervalInfo) returns (IntervalStartResponse);
 
   rpc SendEvent(EventDataRequest) returns (EventResponse);
 
@@ -46,6 +46,8 @@ message IntervalInfo {
     EventID last_event_id = 3;
     MessageIDs last_message_ids = 4;
   }
+
+  CrawlerId id = 5;
 }
 
 message MessageIDs {
@@ -85,6 +87,10 @@ message MessageResponse {
   reserved 1;
   repeated MessageID ids = 3;
   Status status = 2;
+}
+
+message IntervalStartResponse {
+  Status status = 1;
 }
 
 message Status {
