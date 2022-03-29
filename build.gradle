@@ -44,7 +44,7 @@ dependencies {
     api platform('com.exactpro.th2:bom:3.0.0')
 
     api 'com.exactpro.th2:grpc-common:3.4.0'
-    api 'com.exactpro.th2:grpc-data-provider:1.1.0-stream_direction-1857765871-SNAPSHOT'
+    api 'com.exactpro.th2:grpc-data-provider:1.1.0'
 
     api "com.google.protobuf:protobuf-java-util"
     api "io.grpc:grpc-stub"
