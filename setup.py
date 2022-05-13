@@ -121,8 +121,8 @@ setup(
     license='Apache License 2.0',
     python_requires='>=3.7',
     install_requires=[
-        'th2-grpc-common~=3.8.0',
-        'th2-grpc-data-provider~=0.1.4'
+        'th2-grpc-data-provider==0.1.4',
+        'th2-grpc-common>=3,<4'
     ],
     packages=packages,
     package_data=package_data,
