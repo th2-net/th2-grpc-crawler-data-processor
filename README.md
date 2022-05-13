@@ -1,4 +1,4 @@
-# th2 gRPC crawler data processor library (0.3.0)
+# th2 gRPC crawler data processor library (0.3.1)
 
 This project contains the gRPC interface to implement if you want to create your own crawler data processor.
 
@@ -49,6 +49,10 @@ If you wish to manually create and publish package for Python:
     `PYPI_REPOSITORY_URL`, `PYPI_USER` and `PYPI_PASSWORD` are parameters for publishing.
 
 ## Changes:
+
+### 0.3.1
+
++ Update `th2-grpc-data-provider` Python dependency from `0.1.4` to `0.1.6` 
 
 ### 0.3.0
 
