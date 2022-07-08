@@ -122,7 +122,7 @@ setup(
     python_requires='>=3.7',
     install_requires=[
         'th2-grpc-data-provider==1.1.0',
-        'th2-grpc-common>=3,<4',
+        'th2-grpc-common~=3.8.0',
         'mypy-protobuf==3.2'
     ],
     packages=packages,
