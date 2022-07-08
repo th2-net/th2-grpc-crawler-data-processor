@@ -1,4 +1,4 @@
-# th2 gRPC crawler data processor library (0.3.0)
+# th2 gRPC crawler data processor library (0.3.1)
 
 This project contains the gRPC interface to implement if you want to create your own crawler data processor.
 
@@ -50,9 +50,19 @@ If you wish to manually create and publish package for Python:
 
 ## Changes:
 
-### v0.2.0 (Breaking changes)
+### 0.3.1
 
-#### Braking:
++ Update `th2-grpc-data-provider` Python dependency from `0.1.4` to `0.1.6` 
+
+### 0.3.0
+
++ Update `th2-bom` from `3.0.0` to `3.1.0` 
++ Update `th2-grpc-common` from `3.1.2` to `3.8.0`
++ Add stubs for Python
+
+### 0.2.0 (Breaking changes)
+
+#### Breaking:
 
 + Use list of `MessageID` instead of mapping between session and `MessageID`.
   User now will have to specify `MessageID` for both directions in the response if he or she needs to set a checkpoint.
