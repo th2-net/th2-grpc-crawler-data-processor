@@ -1,4 +1,4 @@
-# th2 gRPC crawler data processor library (0.2.0)
+# th2 gRPC crawler data processor library (0.3.0)
 
 This project contains the gRPC interface to implement if you want to create your own crawler data processor.
 
