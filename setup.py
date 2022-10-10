@@ -101,6 +101,9 @@ package_version = package_info['package_version']
 with open('README.md', 'r') as file:
     long_description = file.read()
 
+with open('requirements.txt', 'r') as file:
+    requirements = [l.strip() for l in file.readlines() if not l.startswith('#') and l != '\n']
+
 packages = [''] + find_packages(include=[package_name, f'{package_name}.*'])
 package_data = {'': ['package_info.json'], **dict.fromkeys(packages[1:], ['*.proto'])}
 
@@ -116,11 +119,7 @@ setup(
     url='https://github.com/th2-net/th2-grpc-crawler-data-processor',
     license='Apache License 2.0',
     python_requires='>=3.7',
-    install_requires=[
-        'grpcio-tools==1.38.1',
-        'th2-grpc-common~=3.4.0',
-        'th2-grpc-data-provider~=1.1.0.dev3218351601'
-    ],
+    install_requires=requirements,
     packages=packages,
     package_data=package_data,
     cmdclass={
