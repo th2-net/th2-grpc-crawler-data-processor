@@ -16,13 +16,14 @@ targetCompatibility = 11
 ext {
     grpcVersion                 = '1.32.1'
     protobufVersion             = '3.13.0'
-    serviceGeneratorVersion     = '3.2.2'
+    serviceGeneratorVersion     = '3.2.2-TH2-4262-reduce-load-on-a-separate-boxes-in-crawler-schema-3197511115-SNAPSHOT'
 
     genDir              = file("${project.rootDir}/src/gen")
     sharedDir           = file("${project.rootDir}/shared")
 }
 
 repositories {
+    mavenLocal()
     mavenCentral()
     maven {
             name 'Sonatype_snapshots'
@@ -32,7 +33,6 @@ repositories {
             name 'Sonatype_releases'
             url 'https://s01.oss.sonatype.org/content/repositories/releases/'
     }
-    mavenLocal()
 
     configurations.all {
         resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
@@ -41,10 +41,11 @@ repositories {
 }
 
 dependencies {
-    api platform('com.exactpro.th2:bom:3.0.0')
+    api platform('com.exactpro.th2:bom:3.2.0')
 
     api 'com.exactpro.th2:grpc-common:3.11.1'
-    api 'com.exactpro.th2:grpc-data-provider:1.1.0-th2-3597-2274979939-SNAPSHOT'
+    api 'com.exactpro.th2:grpc-data-provider:1.1.0-TH2-4262-reduce-load-on-a-separate-boxes-in-crawler-schema-3218351603-SNAPSHOT'
+//    api 'com.exactpro.th2:grpc-data-provider:1.1.0' // load from maven local
 
     api "com.google.protobuf:protobuf-java-util"
     api "io.grpc:grpc-stub"
