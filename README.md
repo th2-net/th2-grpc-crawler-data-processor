@@ -1,4 +1,4 @@
-# th2 gRPC crawler data processor library (0.2.0)
+# th2 gRPC crawler data processor library (1.0.0)
 
 This project contains the gRPC interface to implement if you want to create your own crawler data processor.
 
@@ -50,9 +50,16 @@ If you wish to manually create and publish package for Python:
 
 ## Changes:
 
+### v1.0.0 (Breaking changes)
+
+#### Breaking
+
++ Migrated to lw-data-provider gRPC
++ Migrated to Book & Pages
+
 ### v0.2.0 (Breaking changes)
 
-#### Braking:
+#### Breaking:
 
 + Use list of `MessageID` instead of mapping between session and `MessageID`.
   User now will have to specify `MessageID` for both directions in the response if he or she needs to set a checkpoint.
