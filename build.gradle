@@ -44,7 +44,7 @@ dependencies {
     api platform('com.exactpro.th2:bom:4.0.2')
 
     api 'com.exactpro.th2:grpc-common:4.0.0-th2-2150-books-pages-2635598705-SNAPSHOT'
-    api 'com.exactpro.th2:grpc-data-provider:2.0.0-th2-3834-groups-3512305889-SNAPSHOT'
+    api 'com.exactpro.th2:grpc-lw-data-provider:2.0.0-th2-3834-refactor-properties-3607479560-SNAPSHOT'
 
     api "com.google.protobuf:protobuf-java-util"
     api "io.grpc:grpc-stub"
@@ -130,6 +130,14 @@ tasks.whenTaskAdded {task ->
     ) {
         task.enabled = false
     }
+}
+// FIXME: related issue https://github.com/gradle/gradle/issues/17236
+// Also, the problem can be related to source set imports
+tasks.withType(Jar) {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+tasks.withType(Copy) {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }
 
 publishing {
