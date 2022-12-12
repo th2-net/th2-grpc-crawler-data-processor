@@ -43,8 +43,7 @@ repositories {
 dependencies {
     api platform('com.exactpro.th2:bom:4.0.2')
 
-    api 'com.exactpro.th2:grpc-common:4.0.0-th2-2150-books-pages-2635598705-SNAPSHOT'
-    api 'com.exactpro.th2:grpc-lw-data-provider:2.0.0-th2-3834-refactor-properties-3607479560-SNAPSHOT'
+    api 'com.exactpro.th2:grpc-lw-data-provider:2.0.0-th2-3834-refactor-3657779779-SNAPSHOT'
 
     api "com.google.protobuf:protobuf-java-util"
     api "io.grpc:grpc-stub"
